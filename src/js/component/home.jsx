@@ -23,13 +23,17 @@ const Home = () => {
 					className={
 						"yellowLight" +
 						(selectedColor === "yellow" ? " glow" : "")
-					}></div>
+					}>
+					<i className="far fa-hand-spock"></i>
+				</div>
 				<div
 					onClick={() => setSelectedColor("green")}
 					className={
 						"greenLight" +
 						(selectedColor === "green" ? " glow" : "")
-					}></div>
+					}>
+					<i className="far fa-thumbs-up"></i>
+				</div>
 			</div>
 		</div>
 	);

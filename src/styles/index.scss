@@ -1,4 +1,5 @@
 @import "~bootstrap/scss/bootstrap.scss";
+
 .LightTop{
     background: black;
     height:80px;
@@ -23,6 +24,11 @@
 }
 .redLight {
     background: red;
+}
+.fa, .far, .fas {
+    font-size: 50px;
+    font-family: "Font Awesome 5 Free";
+    margin: 10px;
 }
 .yellowLight{
     background: yellow;
