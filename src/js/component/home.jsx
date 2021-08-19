@@ -1,19 +1,22 @@
-import React from "react";
-
+//import React from "react";
+import React, { useState } from "react";
 //include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
-
 //create your first component
+
+const [color, setColor] = useState(" ");
+
 const Home = () => {
 	return (
-		<div className="TrafficLight">
-			<div className ="redLight"></div>
-			<div className = "yellowLight"></div>
-			<div className = "greenLight"></div>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			
+		<div className="container">
+			<div className="LightTop">linea</div>
+			<div className="TrafficLight">
+				<span className="space">.</span>
+				<div
+					className="redLight"
+					onClick={() => setColor("yellow")}></div>
+				<div className="yellowLight">yellow</div>
+				<div className="greenLight">green</div>
+			</div>
 		</div>
 	);
 };
