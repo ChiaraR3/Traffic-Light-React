@@ -3,19 +3,31 @@ import React, { useState } from "react";
 //include images into your bundle
 //create your first component
 
-const [color, setColor] = useState(" ");
+// onClick={() => setColor("yellow")}
 
 const Home = () => {
+	const [selectedColor, setSelectedColor] = useState("red");
 	return (
 		<div className="container">
-			<div className="LightTop">linea</div>
+			<div className="LightTop"></div>
 			<div className="TrafficLight">
-				<span className="space">.</span>
 				<div
-					className="redLight"
-					onClick={() => setColor("yellow")}></div>
-				<div className="yellowLight">yellow</div>
-				<div className="greenLight">green</div>
+					onClick={() => setSelectedColor("red")}
+					className={
+						"redLight" + (selectedColor === "red" ? " glow" : "")
+					}></div>
+				<div
+					onClick={() => setSelectedColor("yellow")}
+					className={
+						"yellowLight" +
+						(selectedColor === "yellow" ? " glow" : "")
+					}></div>
+				<div
+					onClick={() => setSelectedColor("green")}
+					className={
+						"greenLight" +
+						(selectedColor === "green" ? " glow" : "")
+					}></div>
 			</div>
 		</div>
 	);
