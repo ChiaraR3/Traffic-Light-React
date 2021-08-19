@@ -15,7 +15,9 @@ const Home = () => {
 					onClick={() => setSelectedColor("red")}
 					className={
 						"redLight" + (selectedColor === "red" ? " glow" : "")
-					}></div>
+					}>
+					<i className="far fa-hand-paper"></i>
+				</div>
 				<div
 					onClick={() => setSelectedColor("yellow")}
 					className={
